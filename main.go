@@ -8,7 +8,7 @@ import (
 
 const conferenceTicked int = 50
 
-var conferenceName = "Go conference"
+var conferenceName = "Go Conference"
 var remainingTickets uint = 50
 var bookings = make([]UserData, 0)
 
@@ -126,8 +126,8 @@ func greetUsers() {
 func sendTicket(userTickets uint, firstName string, lastName string, email string) {
 	time.Sleep(10 * time.Second)
 	var tickets = fmt.Sprintf("%v tickets for %v %v", userTickets, firstName, lastName)
-	fmt.Println("#########################")
+	fmt.Println("--------------------------")
 	fmt.Printf("send tickets:\n %v \nto email address %v\n", tickets, email)
-	fmt.Println("#########################")
+	fmt.Println("--------------------------")
 	wg.Done()
 }
